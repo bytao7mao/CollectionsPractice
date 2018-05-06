@@ -1,5 +1,6 @@
 package Collections;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 /**
@@ -18,11 +19,15 @@ public class SingletonEx {
         return SINGLETON;
     }
 
+
     public static void main(String[] args) {
         SingletonEx s1 = SingletonEx.getSINGLETON();
         s1.name = "tao";
         SingletonEx s2 = SingletonEx.getSINGLETON();
         System.out.println(s2.name);
+        SingletonEx s3 = SingletonEx.getSINGLETON();
+
+
 
 
     }

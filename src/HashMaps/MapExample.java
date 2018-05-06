@@ -16,6 +16,20 @@ public class MapExample {
         map.put(1, b1);
         map.put(2, b2);
 
+
+        Boolean isSet = new Boolean(true);
+        HashMap<String, Integer> wrapping = new HashMap<>();
+        wrapping.put("w1", 43);
+        //using wrapper
+        Integer weight = new Integer(5);
+        //using unwrapping
+        int unWrapp = wrapping.get("w1");
+        System.out.println("unwrapping" + unWrapp);
+        int miniWeight=+weight.intValue();
+        System.out.println(miniWeight);
+        System.out.println(weight.getClass());
+
+
         //traversing map
         for (Map.Entry<Integer,Book> entry : map.entrySet()) {
             int key = entry.getKey();

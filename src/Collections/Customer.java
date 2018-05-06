@@ -5,25 +5,19 @@ package Collections;
  */
 public class Customer extends Object{
     String name;
+    String[] population;
+    int currentPopulation;
 
-    public Customer(String name) {
+    public Customer(String name, int size) {
         this.name = name;
+        population = new String[size];
+        currentPopulation = 0;
+    }
+    public void hasPopulation(Customer n){
+        population[currentPopulation++] = n.name;
     }
 
-    public Customer() {
-        population++;
-    }
 
-    static int population; //A CLASS VARIABLE -
-    // same memory location as the class
+    public Customer() {}
 
-//    static void addPopulation(){
-//        population++;
-//    }
-
-
-
-//    void counting(){
-//        population++;
-//    }
 }

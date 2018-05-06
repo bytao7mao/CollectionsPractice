@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="openssl-1.1">
+    <CLASSES />
+    <JAVADOC />
+    <NATIVE>
+      <root url="file://$USER_HOME$/Downloads/openssl-1.1.1-pre6" />
+    </NATIVE>
+    <SOURCES />
+  </library>
+</component>
