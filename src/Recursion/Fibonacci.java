@@ -10,6 +10,17 @@ public class Fibonacci {
         if (n<=1){ return n;
         } else return Fibo(n-1)+Fibo(n-2);
     }
+    private static void printBinaryFormat(int number){
+        int binary[] = new int[25];
+        int index = 0;
+        while(number > 0){
+            binary[index++] = number%2;
+            number = number/2;
+        }
+        for(int i = index-1;i >= 0;i--){
+            System.out.print(binary[i]);
+        }
+    }
     public static int Factorial(int n){
         if (n == 0) return 1;
         else return n * Factorial(n-1);
@@ -25,6 +36,7 @@ public class Fibonacci {
         //System.out.println(Fibo(10));
         //System.out.println(Factorial(5));
         System.out.println(foo(6));
+        printBinaryFormat(25);
     }
 
 }
